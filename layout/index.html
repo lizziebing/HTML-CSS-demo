@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>div+css布局</title>
+
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+background-color: orange;
+height: 150px;
+}
+article{
+background-color: green;
+height: 300px;
+padding-left: 150px;
+padding-right: 100px;
+}
+footer{
+	background-color: yellow;
+	height: 100px;
+
+}
+article .left{
+background-color: blue;
+float: left;
+width: 150px;
+height: 16px;
+margin-left: -100%;
+/*position: relative;;
+left: -150px;*/
+}
+article .center{
+	background-color: brown;
+	float: left;
+	width: 100%;
+}
+article .right{
+background-color: black;
+float: left;
+width: 100px;
+height: 16px;
+margin-left: -100px;
+/*position: relative;
+right: -100px;*//*圣杯布局精华*/
+}
+.inner{
+	margin-left: 150px;
+	margin-right: 100px;/*双飞翼布局精华*/
+}
+</style>
+
+</head>
+<body>
+	<header>头部</header>
+	<article>
+<div class="center">
+
+	
+	<div class="inner">中间</div>
+</div>
+<div class="left">左</div>
+<div class="right">右</div>
+
+	</article>
+	<footer>尾部</footer>
+</body>
+<html>
